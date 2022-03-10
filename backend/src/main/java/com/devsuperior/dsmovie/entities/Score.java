@@ -10,6 +10,7 @@ import javax.persistence.Table;
 @Table(name = "tb_score")
 public class Score implements Serializable{
 	private static final long serialVersionUID = 1L;
+	
 	@EmbeddedId
 	private ScorePK id = new ScorePK();
 	private Double value;
